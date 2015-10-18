@@ -8,7 +8,7 @@ actually allow you to query this information dynamically but that is not current
 Example of how to use:
 
 ```
-cd examples
+$ cd examples
 $ wget -qO server-system-variables.html.50 http://dev.mysql.com/doc/refman/5.0/en/server-system-variables.html
 $ wget -qO server-system-variables.html.51 http://dev.mysql.com/doc/refman/5.1/en/server-system-variables.html
 $ wget -qO server-system-variables.html.55 http://dev.mysql.com/doc/refman/5.5/en/server-system-variables.html
