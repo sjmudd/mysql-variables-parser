@@ -11,4 +11,6 @@ Example of how to use:
 $ sh sql_generator.sh 
 ```
 
+This will generate the sysvarXX.sql files for MySQL versions 5.0 to 5.7.
+
 More work is needed but this is a starting point.
