@@ -1,6 +1,6 @@
 mysql-variables-parser
-./5.0/server-system-variables.html
-./5.1/server-system-variables.html
-./5.5/server-system-variables.html
-./5.6/server-system-variables.html
-./5.7/server-system-variables.html
+examples/server-system-variables.html.50
+examples/server-system-variables.html.51
+examples/server-system-variables.html.55
+examples/server-system-variables.html.56
+examples/server-system-variables.html.57
