@@ -212,9 +212,9 @@ func (c *Parser) ProcessingTable(token html.Token) error {
 	case html.TextToken:
 		c.SetText(token)
 	case html.CommentToken:
-		//		utils.PrintToken(token)
+		//		printToken(token)
 	case html.DoctypeToken:
-		//		utils.PrintToken(token)
+		//		printToken(token)
 	case html.SelfClosingTagToken:
 	default: /* do nothing */
 	}
@@ -508,7 +508,7 @@ func (c Parser) ColNo() int {
 
 // SetText puts the text in the appropriate field
 func (c *Parser) SetText(token html.Token) {
-	//	utils.PrintToken(token)
+	//	printToken(token)
 
 	switch c.colNum {
 	case 1:
@@ -559,4 +559,12 @@ func (c *Parser) ResetRowCounters() {
 // SetVerbose makes logging more verbose
 func (c *Parser) SetVerbose() {
 	c.verbose = true
+}
+
+// printToken prints a formatted token
+func printToken(token html.Token) {
+        fmt.Println("tokenType:", token.Type, ":", token.Data)
+        for i := range token.Attr {
+                fmt.Println(" Attribute:", i, "=", token.Attr[i])
+        }
 }
