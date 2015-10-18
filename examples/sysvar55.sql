@@ -1,13 +1,4 @@
 -- New table:sysvar55
-WARNING: already found a sysvar scope for: debug_sync
-WARNING: current value: Global, Session
-WARNING: new value: Session
-WARNING: already found a sysvar scope for: sql_log_bin
-WARNING: current value: Session
-WARNING: new value: Global, Session
-WARNING: already found a sysvar scope for: unique_checks
-WARNING: current value: Session
-WARNING: new value: Global, Session
 -- Create table entry
 DROP TABLE IF EXISTS sysvar55;
 CREATE TABLE sysvar55 (
@@ -125,6 +116,7 @@ INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_s
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_buffer_pool_instances','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_buffer_pool_size','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_change_buffering','Yes','Yes','Yes','Global','Yes');
+INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_change_buffering_debug','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_checksums','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_commit_concurrency','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_concurrency_tickets','Yes','Yes','Yes','Global','Yes');
@@ -142,6 +134,7 @@ INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_s
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_force_recovery','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_io_capacity','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_large_prefix','Yes','Yes','Yes','Global','Yes');
+INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_limit_optimistic_insert_debug','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_lock_wait_timeout','Yes','Yes','Yes','Both','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_locks_unsafe_for_binlog','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_log_buffer_size','Yes','Yes','Yes','Global','No');
@@ -173,6 +166,8 @@ INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_s
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_table_locks','Yes','Yes','Yes','Both','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_thread_concurrency','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_thread_sleep_delay','Yes','Yes','Yes','Global','Yes');
+INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_trx_purge_view_update_only_debug','Yes','Yes','Yes','Global','Yes');
+INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_trx_rseg_n_slots_debug','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_use_native_aio','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_use_sys_malloc','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('innodb_version',' ',' ','Yes','Global','No');
@@ -244,10 +239,12 @@ INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_s
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_seeks_for_key','Yes','Yes','Yes','Both','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_sort_length','Yes','Yes','Yes','Both','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_sp_recursion_depth','Yes','Yes','Yes','Both','Yes');
+INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_tmp_tables',' ',' ','Yes','Both','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_user_connections','Yes','Yes','Yes','Both','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_write_lock_count','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('metadata_locks_cache_size',' ',' ','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('min-examined-row-limit','Yes','Yes','Yes','Both','Yes');
+INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('multi_range_count','Yes','Yes','Yes','Both','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('myisam_data_pointer_size','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('myisam_max_sort_file_size','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('myisam_mmap_size','Yes','Yes','Yes','Global','No');
@@ -391,7 +388,7 @@ INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_s
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('server_id_bits','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('server-id-bits','Yes','Yes',' ',' ','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('shared_memory','Yes','Yes','Yes','Global','No');
-INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('shared_memory_base_name',' ',' ','Yes','Global','No');
+INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('shared_memory_base_name','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('skip_external_locking','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('skip-name-resolve','Yes','Yes',' ',' ','No');
 INSERT INTO sysvar55 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('skip_name_resolve',' ',' ','Yes','Global','No');

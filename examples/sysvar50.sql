@@ -1,7 +1,4 @@
 -- New table:sysvar50
-WARNING: already found a sysvar scope for: max_user_connections
-WARNING: current value: Global
-WARNING: new value: Global, Session
 -- Create table entry
 DROP TABLE IF EXISTS sysvar50;
 CREATE TABLE sysvar50 (
@@ -201,6 +198,7 @@ INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_s
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_seeks_for_key','Yes','Yes','Yes','Both','Yes');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_sort_length','Yes','Yes','Yes','Both','Yes');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_sp_recursion_depth','Yes','Yes','Yes','Both','Yes');
+INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_tmp_tables',' ',' ','Yes','Both','Yes');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_user_connections','Yes','Yes','Yes','Varies','Yes');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('max_write_lock_count','Yes','Yes','Yes','Global','Yes');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('multi_range_count','Yes','Yes','Yes','Both','Yes');
@@ -270,7 +268,7 @@ INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_s
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('server-id','Yes','Yes',' ',' ','Yes');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('server_id',' ',' ','Yes','Global','Yes');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('shared_memory','Yes','Yes','Yes','Global','No');
-INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('shared_memory_base_name',' ',' ','Yes','Global','No');
+INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('shared_memory_base_name','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('skip_external_locking','Yes','Yes','Yes','Global','No');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('skip-networking','Yes','Yes',' ',' ','No');
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('skip_networking',' ',' ','Yes','Global','No');
