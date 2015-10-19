@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"code.google.com/p/go.net/html"
+	"golang.org/x/net/html"
 
 	"github.com/sjmudd/mysql-variables-parser/sysvar"
 	"github.com/sjmudd/mysql-variables-parser/table"
