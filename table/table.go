@@ -32,7 +32,6 @@ func (t Table) CreateTableStatement() {
 	s := `-- Create table entry
 DROP TABLE IF EXISTS %s;
 CREATE TABLE %s (
-    id int unsigned auto_increment NOT NULL,
     system_variable_name varchar(255) NOT NULL,
     cmd_line varchar(255) DEFAULT NULL,
     option_file varchar(50) DEFAULT NULL,
@@ -40,8 +39,7 @@ CREATE TABLE %s (
     var_scope varchar(50) DEFAULT NULL,
     dynamic varchar(50) DEFAULT NULL,
     data_type varchar(50) DEFAULT NULL,
-    PRIMARY KEY (system_variable_name),
-    UNIQUE KEY ( id )
+    PRIMARY KEY (system_variable_name)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 `
 	fmt.Printf(s, t.name, t.name)
