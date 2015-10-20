@@ -2,7 +2,6 @@
 -- Create table entry
 DROP TABLE IF EXISTS sysvar50;
 CREATE TABLE sysvar50 (
-    id int unsigned auto_increment NOT NULL,
     system_variable_name varchar(255) NOT NULL,
     cmd_line varchar(255) DEFAULT NULL,
     option_file varchar(50) DEFAULT NULL,
@@ -10,8 +9,7 @@ CREATE TABLE sysvar50 (
     var_scope varchar(50) DEFAULT NULL,
     dynamic varchar(50) DEFAULT NULL,
     data_type varchar(50) DEFAULT NULL,
-    PRIMARY KEY (system_variable_name),
-    UNIQUE KEY ( id )
+    PRIMARY KEY (system_variable_name)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 -- Insert rows
 INSERT INTO sysvar50 (system_variable_name,cmd_line,option_file,system_var,var_scope,dynamic) VALUES ('auto_increment_increment',' ',' ','Yes','Both','Yes');
